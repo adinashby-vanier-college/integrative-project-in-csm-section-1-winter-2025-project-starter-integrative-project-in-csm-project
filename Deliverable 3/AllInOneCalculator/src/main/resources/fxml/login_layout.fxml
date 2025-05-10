@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml">
+    
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="titleLabel" text="Login" style="-fx-font-size: 24px;"/>
+    
+    <VBox spacing="10">
+        <TextField fx:id="emailField" promptText="Email"/>
+        <PasswordField fx:id="passwordField" promptText="Password"/>
+    </VBox>
+    
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="loginButton" text="Login" onAction="#handleLogin"/>
+        <Button fx:id="signupButton" text="Sign Up" onAction="#handleSignup"/>
+    </HBox>
+    
+    <Label fx:id="messageLabel" style="-fx-text-fill: red;"/>
+</VBox> 
